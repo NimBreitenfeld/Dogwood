@@ -13,3 +13,6 @@ read FAVORITE
 #How many pokemon games have you played in the franchise? (number)
 echo "How many pokemon games have you played in the franchise?"
 read NUMBER
+# Record the time
+TIME=$(date)
+echo "It is $TIME, thank you for participating!"
