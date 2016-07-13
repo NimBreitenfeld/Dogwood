@@ -15,4 +15,12 @@ echo "How many pokemon games have you played in the franchise?"
 read NUMBER
 # Record the time
 TIME=$(date)
-echo "It is $TIME, thank you for participating!"
+echo "It is $TIME, thank you for participating"
+
+echo $NAME >> temp.list
+echo $PLAY >> temp.list
+echo $TEAM >> temp.list
+echo $FAVORITE >> temp.list
+echo $TIME >> temp.list
+
+paste -s temp.list >> aggregate.csv
